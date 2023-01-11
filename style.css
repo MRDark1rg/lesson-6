@@ -1,0 +1,86 @@
+.wrapper-box{
+    width: 400px;
+    height: 400px;
+    background-color: yellow;
+    position: relative;
+    transition-property:all; 
+    /* all nishnavs rom vmoqmedeb yvela im parametrze rasac gavwer qvemot wrapper box hovershii  */
+    transition-duration: 3s;
+    /* ra drois ganmavlobashi iyos efeqti */
+    transition-timing-function: linear;
+    /* lineari aris ertida igive sichqarit iwyebs da asrulebs moqmedebas efeqti.. */
+    transition-delay: 0.5s;
+    /* ra droshi, ramden xanshi daiwyos efeqtma moqmedeba ,, tu minda ro egreve daiwyos ar gamoviyeneb amas..*/
+}
+.child-box{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition-property: all; 
+    transition-duration: 3s;
+    transition-timing-function: ease-out;
+    transition-delay: 0.2;
+    
+   
+}
+/* hover examples */
+.wrapper-box:hover{
+    background-color: blue;
+
+}
+
+.child-box:hover{
+    background-color: lightblue; 
+    transform: translate(-50%, -50%) rotate(0deg);
+    
+}
+
+/* keyframe animation examples */
+
+.chat-icon{
+    height: 100px;
+    animation: chatanimationnew 5s 3;
+    animation-direction: alternate;
+    /* position: absolute; */
+}
+.animation-block{
+    /* position: relative; */
+}
+
+/* @keyframes chatanimation {
+    0% {left: 200px; transform: rotate(0deg)}
+    20% {left: 400px; transform: rotate(40deg)}
+    50% {left: 600px; transform: rotate(80deg)}
+    75% {left: 800px; transform: rotate(120deg)}
+    100% {left: 1000px; transform: rotate(360deg)}
+} */
+
+/* zemot dawerili aris animaciis modzraoba magram meorenairadac shegvidzlia vamodzraot X da Y gerdzebze */
+
+
+@keyframes chatanimationnew {
+    0% {transform: translateX(200px);}
+    20% {transform: translateX(400px) rotate(180deg);}
+    50% {transform: translateX(600px) ;}
+    75% {transform: translateX(800px);}
+    100% {transform: translateX(1000px) ;}
+}
+
+/* gansxvaveba X da Y gerdzebze modzraobasa da LEFT RIGHT -it modzraobas shoris aris is rom
+X da Y gerdzebis dros aucilebeli agar xdeba positionebis mititeba !!!
+
+dziritadad jobia transform translateebiit vamodzraooo !! */
+
+
+
+
+
+
+
+
+
+
